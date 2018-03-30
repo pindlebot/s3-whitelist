@@ -10,10 +10,12 @@ const argv = require('yargs')
     default: 'us-east-1'
   })
   .option('accessKeyId', {
-    type: 'string'
+    type: 'string',
+    default: process.env.AWS_ACCESS_KEY_ID
   })
   .option('secretAccessKey', {
-    type: 'string'
+    type: 'string',
+    default: process.env.AWS_SECRET_ACCESS_KEY
   })
   .command('$0', 'update bucket policy', () => {}, async argv => {
     const base = new Base(argv)

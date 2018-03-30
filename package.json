@@ -1,7 +1,10 @@
 {
   "name": "s3-whitelist",
   "version": "0.0.1",
-  "main": "index.js",
+  "engines": {
+    "node": "9.x"
+  },
+  "main": "bin/s3-whitelist.js",
   "bin": {
     "s3-whitelist": "bin/s3-whitelist.js"
   },
@@ -14,5 +17,8 @@
   },
   "peerDependencies": {
     "aws-sdk": "^2.217.1"
+  },
+  "devDependencies": {
+    "npm-patch": "^0.0.39"
   }
 }
