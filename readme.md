@@ -1,6 +1,6 @@
 ## s3-whitelist
 
-s3-whitelist is a super simple cli tool for AWS S3. It does one thing: whitelists your public ip address to allow access to an s3 bucket for local development.
+s3-whitelist is a super simple cli tool for AWS S3. It does one thing: whitelists the public ip address on your current machine to allow access to an s3 bucket for local development.
 
 ## Installation
 
@@ -10,21 +10,30 @@ npm install -g s3-whitelist
 
 ## Usage
 
+
+Whitelist your IP address:
+
 ```bash
-s3-whitelist --bucket myBucket --region us-east-1
+s3-whitelist add --bucket myBucket --region us-east-1
+```
+
+Remove a whitelist added by `s3-whitelist`:
+
+```bash
+s3-whitelist remove --bucket myBucket --region us-east-1
 ```
 
 ### Arguments
 
-**bucket** (required)
-Your S3 bucket name.
+**-- bucket**
+Your AWS S3 bucket name (required).
 
-**region** (default: us-east-1)
-AWS region.
+**-- region**
+AWS region (defaults to us-east-1).
 
 If your credentials are not set locally in `~/.aws/credentials` You can also explicitly provide credentials as arguments:
  - **accessKeyId** (optional)
- - **secretAccessKey**
+ - **secretAccessKey** (optional)
 
 ### Commands
 
