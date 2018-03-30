@@ -1,6 +1,6 @@
 {
   "name": "s3-whitelist",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "engines": {
     "node": "9.x"
   },
@@ -16,9 +16,7 @@
     "yargonaut": "^1.1.2",
     "yargs": "^11.0.0"
   },
-  "peerDependencies": {
-    "aws-sdk": "^2.217.1"
-  },
+  "peerDependencies": {},
   "devDependencies": {
     "npm-patch": "^0.0.39"
   }
