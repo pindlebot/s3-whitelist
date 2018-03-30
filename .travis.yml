@@ -1,0 +1,16 @@
+language: node_js
+node_js:
+- 9
+branches:
+  only:
+  - master
+install:
+- yarn
+before_script:
+- yarn run build
+script:
+- yarn run npm-patch
+- rm .npmrc
+env:
+  NPM_TOKEN:
+    secure: "$NPM_TOKEN"

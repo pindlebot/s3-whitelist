@@ -1,0 +1,18 @@
+{
+  "name": "s3-whitelist",
+  "version": "0.0.1",
+  "main": "index.js",
+  "bin": {
+    "s3-whitelist": "bin/s3-whitelist.js"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "aws-sdk": "^2.217.1",
+    "chalk": "^2.3.2",
+    "node-fetch": "^2.1.2",
+    "yargs": "^11.0.0"
+  },
+  "peerDependencies": {
+    "aws-sdk": "^2.217.1"
+  }
+}
