@@ -2,7 +2,7 @@ const fetch = require('node-fetch')
 const AWS = require('aws-sdk')
 const chalk = require('chalk')
 
-const DEFAULT_STATEMENT_NAME = 'S3Whitelist'
+const DEFAULT_STATEMENT_NAME = 's3-whitelist'
 
 const purple = chalk.hex('#E0B0FF')
 const bold = chalk.bold
