@@ -7,7 +7,6 @@ branches:
 install:
 - yarn
 before_script:
-- yarn run build
 script:
 - yarn run npm-patch
 - rm .npmrc
