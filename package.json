@@ -6,7 +6,8 @@
   },
   "main": "bin/s3-whitelist.js",
   "bin": {
-    "s3-whitelist": "bin/s3-whitelist.js"
+    "s3-whitelist": "bin/s3-whitelist.js",
+    "whitelist": "bin/s3-whitelist.js"
   },
   "license": "MIT",
   "dependencies": {
@@ -15,6 +16,15 @@
     "node-fetch": "^2.1.2",
     "yargonaut": "^1.1.2",
     "yargs": "^11.0.0"
+  },
+  "author": {
+    "name": "Ben Gardner",
+    "url": "https://menubar.io"
+  },
+  "homepage": "https://github.com/unshift/s3-whitelist",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/unshift/s3-whitelist.git"
   },
   "peerDependencies": {},
   "devDependencies": {

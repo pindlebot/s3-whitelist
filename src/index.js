@@ -8,7 +8,7 @@ const purple = chalk.hex('#E0B0FF')
 const bold = chalk.bold
 
 const log = (format, ...rest) => console.log(
-  purple('[s3-whitelist]: ') + 
+  purple('[whitelist]: ') + 
   format.replace(/%s/g, seq => bold(seq)),
   ...rest
 )

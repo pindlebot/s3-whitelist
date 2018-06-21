@@ -47,9 +47,18 @@ const argv = require('yargs')
         await base.remove()
         process.exit = 0
       } catch (err) {
+        console.error(err)
         process.exit = 1
       }
   })
-  //.demandOption(['bucket'])
-  .argv
+  .command('$0', '', () => {}, async argv => {
+    const base = new Base(argv)
+      try {
+        await base.update()
+        process.exit = 0
+      } catch (err) {
+        console.error(err)
+        process.exit = 1
+      }
+  }).strict().argv
 
